@@ -3,7 +3,7 @@ Take multiple quast reports and add them to one tsv table
 
 ## Pre-requisites 
 Run QUAST command and generate a report \
-*quast.py <contigs> -o <output folder>*
+`quast.py <contigs> -o <output folder>`
 
 ## Dependecies 
 **Python 3** \
@@ -15,7 +15,7 @@ Python packages
 - collection 
 
 ## Usage 
-* python quast_table.py --help \
+`python quast_table.py --help`
 usage: quast_table.py [-h] [-d DIRECTORY] [-o OUTPUT]
 
 Take multiple quast output files and consolidate them to one output
@@ -26,4 +26,4 @@ optional arguments:
   -o OUTPUT     Enter the output file name
 
 ## Example command 
-*python quast_table.py -d quast_out -o quast_output.tsv*
+`python quast_table.py -d quast_out -o quast_output.tsv`
