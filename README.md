@@ -29,7 +29,7 @@ optional arguments:
 `python quast_table.py -d quast_out -o quast_output.tsv`
 
 ## Input files
-This code takes the quast output (report.tsv) from quast output directories. To run this code, 
+This code takes the quast output (report.tsv) from quast output directories. To setup the input files, 
 1) Run QUAST first for all the assemblies, \
 `quast.py sampplename_contigs -o samplename_quast_assembly`
 
