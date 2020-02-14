@@ -30,10 +30,11 @@ optional arguments:
 
 ## Input files
 This code takes the quast output (report.tsv) from quast output directories. To run this code, 
-1) Run QUAST first 
-`quast.py input contigs -o assmembly_output`
-2) write all the report.tsv files to the new directory, but make sure to rename the report.tsv to sample-name.tsv to the new directory
-        To do this, you can run mv report.tsv quast-out/sample-name.tsv
-        For multiple files - I just run the above command using a for loop
-3) Confirm that the new directory quast-out has the right number of files
+1) Run QUAST first for all the assemblies, \
+`quast.py sampplename_contigs -o samplename_quast_assembly`
+
+2) write all the report.tsv files to the new directory, but make sure to rename the report.tsv to sample-name.tsv, here are the commands to do this, \
+`mv samplename_quast_assembly/report.tsv sample_name_quast.tsv`
+
+3) Confirm that the new directory quast-out has the right number of files and is named correctly before running the quast,py script
 
