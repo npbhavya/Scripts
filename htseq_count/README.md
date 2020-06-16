@@ -37,5 +37,9 @@ This code takes the htseq counts from htseq. To setup the input files, first wri
 
 3) Require the reference gff file that was used in the command. has to be gff formatm not GTF.
 
+## Downstream 
+Run the bash command to generate a tsv file
+`sed -e "s/\[//g;s/\]//g;s/'//g;s|\t|,|g;s|,|\t|g " counts_output >counts_output.tsv`
+
 
 
