@@ -14,7 +14,7 @@ Python packages
 - collection 
 
 ## Usage 
-`python counts_table.py --help`
+`python counts_table.py --help` \
 usage: counts_table.py [-h] [-d DIRECTORY] [-g GFF] [-o OUTPUT]
 
 Take multiple output files and consolidate to one file
