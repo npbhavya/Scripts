@@ -2,7 +2,7 @@
 Take multiple htseq count results and add them to one tsv table
 
 ## Pre-requisites 
-Run htseq counts command and generate a counts output file. This is an example htseq command
+Run htseq counts command and generate a counts output file. This is an example htseq command \
 `htseq-count -f bam -r pos -s no -m intersection-nonempty -t CDS -i Parent <bam file> <gff file> > <output counts file>`
 
 ## Dependecies 
@@ -38,7 +38,7 @@ This code takes the htseq counts from htseq. To setup the input files, first wri
 3) Require the reference gff file that was used in the command. has to be gff formatm not GTF.
 
 ## Downstream 
-Run the bash command to generate a tsv file
+Run the bash command to generate a tsv file \
 `sed -e "s/\[//g;s/\]//g;s/'//g;s|\t|,|g;s|,|\t|g " counts_output >counts_output.tsv`
 
 
