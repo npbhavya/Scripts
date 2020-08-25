@@ -23,10 +23,11 @@ optional arguments:
   -h, --help    show this help message and exit \
   -d DIRECTORY  Enter a directory with htseq count files \
   -g GFF        Enter the refernece gff file \
+  -t type       Enter the type of the feature from the gff file \
   -o OUTPUT     Enter the output file name
 
 ## Example command 
-`python counts_table.py -d Counts/ -g reference.gff -o counts_output`
+`python counts_table.py -d Counts/ -g reference.gff -t type -o counts_output`
 
 ## Input files
 This code takes the htseq counts from htseq. To setup the input files, first write the htseq counts into one directory.
