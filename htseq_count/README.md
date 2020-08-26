@@ -42,6 +42,8 @@ This code takes the htseq counts from htseq. To setup the input files, first wri
 Run the bash command to generate a tsv file \
 `sed -e "s/\[//g;s/\]//g;s/'//g;s|\t|,|g;s|,|\t|g " counts_output >counts_output.tsv`
 
+## Assumptions
+
 ### Assumptions in the code about the gff file
 The code grabs the ID=... and Name=... from the gff last column, assuming the last column for the "type" entry is in the order 
 
