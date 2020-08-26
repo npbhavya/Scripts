@@ -44,7 +44,8 @@ Run the bash command to generate a tsv file \
 
 ### Assumptions in the code about the gff file
 The code grabs the ID=... and Name=... from the gff last column, assuming the last column for the "type" entry is in the order 
-TTHERM_140 testing CDS 1 20000 1 + . ID=cds;Name=TTHERM_00898140;Note="kinase domain protein"
+
+  *TTHERM_140 testing CDS 1 20000 1 + . ID=cds;Name=TTHERM_00898140;Note="kinase domain protein"*
 
 If the last column's order changes the code needs to be changes on lines below in the gfaparser function. 
 
