@@ -13,12 +13,21 @@ def consolidate(dir, match_col, out):
 	filelist=input_dir(dir)
 	h=defaultdict(list)
 	col=int(match_col)
+	counts=0
 	for file in filelist:
 		openfi=open(file, 'r')
 		for line in openfi:
 			tmp=line.strip('\n')
 			fields=tmp.split('\t')
-			h[fields[0]].append(fields[col])
+			if (counts==0):
+				h[fields[0]].append(fields[col])
+			elif (counts==1):
+				val= h[fields[0]]
+				if (len(val)!=(counts)):
+					h[fields[0]].append("NA")
+				h[fields[0]].append(fields[col])
+		counts=counts+1
+
 
 	print ("Writing output to a file")
 	with open (out, 'w') as fout:
