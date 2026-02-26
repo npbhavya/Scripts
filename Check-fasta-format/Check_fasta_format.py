@@ -3,7 +3,8 @@
 import argparse
 import sys
 from Bio import SeqIO
-from Bio.SeqUtils import GC
+#from Bio.SeqUtils import GC
+from Bio.SeqUtils import gc_fraction
 def CheckFasta(FileIn,FileOut):
 	fin =open(FileIn)
 	fout=open(FileOut,"w")
